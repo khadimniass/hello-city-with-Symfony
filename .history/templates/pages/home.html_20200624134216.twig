@@ -1,0 +1,14 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello PagesController!{% endblock %}
+
+{% block body %}
+
+<div>
+    <img src="/imgs/flag-senegal.PNG" height = "30" width = "120" alt="Sénégals'flag">
+    <h1 class="text-5xl font -semibold text-indigo-600" >Hello from Sénégal</h1>
+    <p class="text-lg text-gray-800" >
+        It is currently {{'now'|date('H:i ') }}.
+    </p>
+</div>
+{% endblock %}

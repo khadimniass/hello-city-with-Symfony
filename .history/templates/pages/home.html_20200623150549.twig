@@ -1,0 +1,15 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello PagesController!{% endblock %}
+
+{% block body %}
+    <h1>Hello from Sénégal</h1>
+
+    <p>It is currently {{'now'|date('H:i ') }}.</p>
+    <footer>
+        <p>
+            &copy CopyRignt {{'now'|date('Y') }}
+            &middot; <a href="{{ path('app_about')}} ">About Me</a>
+        </p>
+    </footer>
+{% endblock %}

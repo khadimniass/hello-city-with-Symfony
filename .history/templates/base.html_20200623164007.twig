@@ -7,18 +7,16 @@
         <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
         {% block stylesheets %}{% endblock %}
     </head>
-    <body class="flex flex-col justify-between items-center min-h-screen">
-        <main role="main" class="my-6 flex flex-col items-center justify-center">
+    <body>
         {% block body %}{% endblock %}
-        </main>
+        {% block javascripts %}{% endblock %}
 
-    <footer class="my-6">
-        <p class="text-gray-400">
+    <footer>
+        <p>
             &copy CopyRignt {{'now'|date('Y') }}
-            &middot; <a href="{{ path('app_about')}}" 
-            class="text-indigo-500 hover:text-indigo-600 underline">About Me</a>
+            &middot; <a href="{{ path('app_about')}} ">About Me</a>
         </p>
     </footer>
-        {% block javascripts %}{% endblock %}
+
     </body>
 </html>

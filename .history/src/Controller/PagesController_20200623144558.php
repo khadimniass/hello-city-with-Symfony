@@ -18,10 +18,11 @@ class PagesController extends AbstractController
     }
 
     /**
-     * @Route("/about-me", name="app_about")
+     * @Route("/about", name="app_about")
      */
     public function about():Response
     {
+        // dd(date_default_timezone_get());
         return $this->render('pages/about.html.twig', [
             'controller_name' => 'PagesController',
         ]);
